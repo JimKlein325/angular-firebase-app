@@ -16,7 +16,7 @@ export class CoursesService {
         return this.db.list('courses').map(Course.fromJsonArray);
     }
 
-
+// test
     findCourseByUrl(courseUrl:string): Observable<Course> {
         return this.db.list('courses', {
             query: {
